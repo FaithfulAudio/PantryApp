@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {
   Image,
   ImageBackground,
@@ -9,41 +9,51 @@ import {
   View,
 } from 'react-native';
 import {Card, Text} from 'react-native-paper';
-import {imageMap, pantry_items} from '../spiceData/recommendedPantryItems';
+import {PANTRY_HASH, imageMap} from '../spiceData/recommendedPantryItems';
 import usePantryStore from '../stores/pantry.store';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 function PantryItems() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredItems, setFilteredItems] = useState(pantry_items);
-  const {togglePantryItem, isItemInPantry} = usePantryStore();
+  const {removeItemFromPantry, myPantryList} = usePantryStore();
+  const [filteredItems, setFilteredItems] = useState(
+    myPantryList.map(id => PANTRY_HASH[id]),
+  );
+  const swipeableRef = useRef(null) as any;
+
+  useEffect(() => {
+    const pantryItemsInMyPantry = myPantryList.map(id => PANTRY_HASH[id]);
+    setFilteredItems(pantryItemsInMyPantry);
+  }, [myPantryList]);
 
   const handleSearch = (query: string) => {
-    setSearchQuery(query);
     const lowerCaseQuery = query.toLowerCase();
-    const filtered = pantry_items.filter(
-      item =>
-        item.title.toLowerCase().includes(lowerCaseQuery) ||
-        item.description.toLowerCase().includes(lowerCaseQuery),
-    );
-    setFilteredItems(filtered);
+    setSearchQuery(lowerCaseQuery);
+    const filteredItems = myPantryList
+      .map(id => PANTRY_HASH[id])
+      .filter(
+        item =>
+          item.title.toLowerCase().includes(lowerCaseQuery) ||
+          item.description.toLowerCase().includes(lowerCaseQuery),
+      );
+    setFilteredItems(filteredItems);
   };
 
   const handleClearSearch = () => {
     setSearchQuery('');
-    setFilteredItems(
-      pantry_items.sort((a, b) => a.title.localeCompare(b.title)),
-    );
+    setFilteredItems(myPantryList.map(id => PANTRY_HASH[id]));
   };
 
-  const renderHeader = (letter: string, index: number) => (
-    <View key={index} style={styles.headerContainer}>
-      <View style={styles.headerCircle}>
-        <Text style={styles.headerText}>{letter}</Text>
-      </View>
-    </View>
-  );
+  useEffect(() => {
+    if (swipeableRef?.current) {
+      swipeableRef.current.close();
+    }
+  }, [swipeableRef]);
 
-  const getFirstLetter = (title: string) => title.charAt(0).toUpperCase();
+  const removeItem = async (id: number) => {
+    removeItemFromPantry(id);
+    setFilteredItems(filteredItems.filter(item => item.id !== id));
+  };
 
   return (
     <ImageBackground
@@ -67,40 +77,28 @@ function PantryItems() {
         )}
       </View>
       <ScrollView contentContainerStyle={styles.container}>
-        {filteredItems.map((item, index) => (
-          <View key={index}>
-            {index === 0 ||
-            getFirstLetter(filteredItems[index - 1].title) !==
-              getFirstLetter(item.title)
-              ? renderHeader(getFirstLetter(item.title), index)
-              : null}
-            <TouchableOpacity onPress={() => togglePantryItem(item.id)}>
-              <Card
-                style={[
-                  styles.cardStyle,
-                  isItemInPantry(item.id) && styles.selectedCard,
-                ]}>
-                <Card.Title
-                  title={item.title}
-                  left={() =>
-                    item.id ? (
-                      <Image
-                        source={imageMap[item.id]}
-                        style={styles.leftIcon}
-                      />
-                    ) : null
-                  }
-                />
-                {isItemInPantry(item.id) && (
-                  <View style={styles.banner}>
-                    <Text style={styles.bannerText}>In Pantry</Text>
-                  </View>
-                )}
-                <Card.Content>
-                  <Text style={styles.description}>{item.description}</Text>
-                </Card.Content>
-              </Card>
-            </TouchableOpacity>
+        {filteredItems.map(item => (
+          <View>
+            <Card style={styles.cardStyle}>
+              <Card.Title
+                title={item.title}
+                left={() =>
+                  item.id ? (
+                    <Image source={imageMap[item.id]} style={styles.leftIcon} />
+                  ) : null
+                }
+              />
+              <Card.Content>
+                <Text style={styles.description}>{item.description}</Text>
+              </Card.Content>
+            </Card>
+            <Icon
+              name="trash"
+              size={30}
+              color="black"
+              style={styles.trash}
+              onPress={() => removeItem(item.id)}
+            />
           </View>
         ))}
       </ScrollView>
@@ -113,25 +111,15 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
   },
+  trash: {
+    position: 'absolute',
+    right: 30,
+    top: 20,
+  },
   leftIcon: {
     width: 50,
     height: 50,
     borderRadius: 25,
-  },
-  banner: {
-    backgroundColor: 'blue',
-    borderRadius: 20,
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    marginHorizontal: 10,
-    marginTop: -10,
-    marginBottom: 10,
-    width: '30%',
-  },
-  bannerText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    textAlign: 'center',
   },
   cardStyle: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -150,9 +138,16 @@ const styles = StyleSheet.create({
     height: 200,
     alignSelf: 'center',
   },
-  selectedCard: {
-    borderColor: '#3498db',
-    borderWidth: 2,
+  leftSwipeContainer: {
+    backgroundColor: 'transparent',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    padding: 20,
+    height: '100%',
+  },
+  leftSwipeText: {
+    color: 'black',
+    fontWeight: '600',
   },
   clearButton: {
     paddingHorizontal: 10,
@@ -202,6 +197,9 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 16,
+  },
+  swipeableContainer: {
+    flex: 1, // Ensure Swipeable takes up full height
   },
 });
 

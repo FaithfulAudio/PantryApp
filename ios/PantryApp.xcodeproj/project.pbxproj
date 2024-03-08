@@ -8,12 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* PantryAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PantryAppTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-PantryApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-PantryApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-PantryApp-PantryAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PantryApp-PantryAppTests.a */; };
+		5AA9912F709FE02FA8EA2F4C /* Pods_PantryApp_PantryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0283FAEB67D8ADF8E79D81 /* Pods_PantryApp_PantryAppTests.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D68128FDA420DDA6497B61C1 /* Pods_PantryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */; };
+		EE74245B2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74245C2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74245D2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74245E2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74245F2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424602B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424612B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424622B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424632B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424642B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424652B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424662B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424672B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424682B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE7424692B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74246A2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74246B2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74246C2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74246D2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74246F2B9BA12600722435 /* MyPantry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EE74246E2B9BA12600722435 /* MyPantry.jpeg */; };
+		EE7424842B9BA8D600722435 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424702B9BA8D600722435 /* AntDesign.ttf */; };
+		EE7424852B9BA8D600722435 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424712B9BA8D600722435 /* Entypo.ttf */; };
+		EE7424862B9BA8D600722435 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424722B9BA8D600722435 /* EvilIcons.ttf */; };
+		EE7424872B9BA8D600722435 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424732B9BA8D600722435 /* Feather.ttf */; };
+		EE7424882B9BA8D600722435 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424742B9BA8D600722435 /* FontAwesome.ttf */; };
+		EE7424892B9BA8D600722435 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424752B9BA8D600722435 /* FontAwesome5_Brands.ttf */; };
+		EE74248A2B9BA8D600722435 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424762B9BA8D600722435 /* FontAwesome5_Regular.ttf */; };
+		EE74248B2B9BA8D600722435 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424772B9BA8D600722435 /* FontAwesome5_Solid.ttf */; };
+		EE74248C2B9BA8D600722435 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424782B9BA8D600722435 /* FontAwesome6_Brands.ttf */; };
+		EE74248D2B9BA8D600722435 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424792B9BA8D600722435 /* FontAwesome6_Regular.ttf */; };
+		EE74248E2B9BA8D600722435 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247A2B9BA8D600722435 /* FontAwesome6_Solid.ttf */; };
+		EE74248F2B9BA8D600722435 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247B2B9BA8D600722435 /* Fontisto.ttf */; };
+		EE7424902B9BA8D600722435 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247C2B9BA8D600722435 /* Foundation.ttf */; };
+		EE7424912B9BA8D600722435 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247D2B9BA8D600722435 /* Ionicons.ttf */; };
+		EE7424922B9BA8D600722435 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247E2B9BA8D600722435 /* MaterialCommunityIcons.ttf */; };
+		EE7424932B9BA8D600722435 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE74247F2B9BA8D600722435 /* MaterialIcons.ttf */; };
+		EE7424942B9BA8D600722435 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424802B9BA8D600722435 /* Octicons.ttf */; };
+		EE7424952B9BA8D600722435 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424812B9BA8D600722435 /* SimpleLineIcons.ttf */; };
+		EE7424962B9BA8D600722435 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424822B9BA8D600722435 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +75,34 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PantryApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PantryApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PantryApp/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-PantryApp-PantryAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PantryApp-PantryAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-PantryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-PantryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.release.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp-PantryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-PantryApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PantryApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PantryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		322592799A719C9038940D4F /* Pods-PantryApp-PantryAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp-PantryAppTests.release.xcconfig"; path = "Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E0283FAEB67D8ADF8E79D81 /* Pods_PantryApp_PantryAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PantryApp_PantryAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818DB878C51231A05FEFA35 /* Pods-PantryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.release.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PantryApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-PantryApp-PantryAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp-PantryAppTests.release.xcconfig"; path = "Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CCB421554C53B526F8DF999 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp-PantryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94153818CC42DC15FB3A7A3B /* Pods-PantryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE74246E2B9BA12600722435 /* MyPantry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MyPantry.jpeg; path = ../src/assets/MyPantry.jpeg; sourceTree = "<group>"; };
+		EE7424702B9BA8D600722435 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		EE7424712B9BA8D600722435 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		EE7424722B9BA8D600722435 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		EE7424732B9BA8D600722435 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		EE7424742B9BA8D600722435 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		EE7424752B9BA8D600722435 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		EE7424762B9BA8D600722435 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		EE7424772B9BA8D600722435 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		EE7424782B9BA8D600722435 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		EE7424792B9BA8D600722435 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		EE74247A2B9BA8D600722435 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		EE74247B2B9BA8D600722435 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		EE74247C2B9BA8D600722435 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		EE74247D2B9BA8D600722435 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		EE74247E2B9BA8D600722435 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		EE74247F2B9BA8D600722435 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		EE7424802B9BA8D600722435 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		EE7424812B9BA8D600722435 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		EE7424822B9BA8D600722435 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-PantryApp-PantryAppTests.a in Frameworks */,
+				5AA9912F709FE02FA8EA2F4C /* Pods_PantryApp_PantryAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-PantryApp.a in Frameworks */,
+				D68128FDA420DDA6497B61C1 /* Pods_PantryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-PantryApp.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-PantryApp-PantryAppTests.a */,
+				2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */,
+				5E0283FAEB67D8ADF8E79D81 /* Pods_PantryApp_PantryAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +175,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EE7424832B9BA8D600722435 /* Fonts */,
+				EE74246E2B9BA12600722435 /* MyPantry.jpeg */,
 				13B07FAE1A68108700A75B9A /* PantryApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PantryAppTests */,
@@ -140,12 +201,39 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-PantryApp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-PantryApp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-PantryApp-PantryAppTests.release.xcconfig */,
+				94153818CC42DC15FB3A7A3B /* Pods-PantryApp.debug.xcconfig */,
+				7818DB878C51231A05FEFA35 /* Pods-PantryApp.release.xcconfig */,
+				8CCB421554C53B526F8DF999 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */,
+				322592799A719C9038940D4F /* Pods-PantryApp-PantryAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE7424832B9BA8D600722435 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE7424702B9BA8D600722435 /* AntDesign.ttf */,
+				EE7424712B9BA8D600722435 /* Entypo.ttf */,
+				EE7424722B9BA8D600722435 /* EvilIcons.ttf */,
+				EE7424732B9BA8D600722435 /* Feather.ttf */,
+				EE7424742B9BA8D600722435 /* FontAwesome.ttf */,
+				EE7424752B9BA8D600722435 /* FontAwesome5_Brands.ttf */,
+				EE7424762B9BA8D600722435 /* FontAwesome5_Regular.ttf */,
+				EE7424772B9BA8D600722435 /* FontAwesome5_Solid.ttf */,
+				EE7424782B9BA8D600722435 /* FontAwesome6_Brands.ttf */,
+				EE7424792B9BA8D600722435 /* FontAwesome6_Regular.ttf */,
+				EE74247A2B9BA8D600722435 /* FontAwesome6_Solid.ttf */,
+				EE74247B2B9BA8D600722435 /* Fontisto.ttf */,
+				EE74247C2B9BA8D600722435 /* Foundation.ttf */,
+				EE74247D2B9BA8D600722435 /* Ionicons.ttf */,
+				EE74247E2B9BA8D600722435 /* MaterialCommunityIcons.ttf */,
+				EE74247F2B9BA8D600722435 /* MaterialIcons.ttf */,
+				EE7424802B9BA8D600722435 /* Octicons.ttf */,
+				EE7424812B9BA8D600722435 /* SimpleLineIcons.ttf */,
+				EE7424822B9BA8D600722435 /* Zocial.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,12 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PantryAppTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				980EE12BDD7BF3E801BB07ED /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				5E52D6A7082106289A4424BF /* [CP] Embed Pods Frameworks */,
+				0994EFE8D8987FB60BD13542 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PantryApp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				236EAEC3D74ADAF6DECC48BC /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				C635C79210235569952C487C /* [CP] Embed Pods Frameworks */,
+				E8D74BD0BE56AC6F67FDCE82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,8 +329,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE74245B2B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424902B9BA8D600722435 /* Foundation.ttf in Resources */,
+				EE7424912B9BA8D600722435 /* Ionicons.ttf in Resources */,
+				EE7424602B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424932B9BA8D600722435 /* MaterialIcons.ttf in Resources */,
+				EE74245F2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74248D2B9BA8D600722435 /* FontAwesome6_Regular.ttf in Resources */,
+				EE74245C2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245E2B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424892B9BA8D600722435 /* FontAwesome5_Brands.ttf in Resources */,
+				EE7424942B9BA8D600722435 /* Octicons.ttf in Resources */,
+				EE7424652B9B9EF700722435 /* BuildFile in Resources */,
+				EE74248F2B9BA8D600722435 /* Fontisto.ttf in Resources */,
+				EE7424842B9BA8D600722435 /* AntDesign.ttf in Resources */,
+				EE7424672B9B9EF700722435 /* BuildFile in Resources */,
+				EE74248A2B9BA8D600722435 /* FontAwesome5_Regular.ttf in Resources */,
+				EE7424662B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424622B9B9EF700722435 /* BuildFile in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				EE7424682B9B9EF700722435 /* BuildFile in Resources */,
+				EE74246F2B9BA12600722435 /* MyPantry.jpeg in Resources */,
+				EE74248B2B9BA8D600722435 /* FontAwesome5_Solid.ttf in Resources */,
+				EE7424962B9BA8D600722435 /* Zocial.ttf in Resources */,
+				EE7424852B9BA8D600722435 /* Entypo.ttf in Resources */,
+				EE7424612B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245D2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74246D2B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424692B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424862B9BA8D600722435 /* EvilIcons.ttf in Resources */,
+				EE7424922B9BA8D600722435 /* MaterialCommunityIcons.ttf in Resources */,
+				EE74246A2B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424632B9B9EF700722435 /* BuildFile in Resources */,
+				EE74246B2B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424872B9BA8D600722435 /* Feather.ttf in Resources */,
+				EE7424882B9BA8D600722435 /* FontAwesome.ttf in Resources */,
+				EE74246C2B9B9EF700722435 /* BuildFile in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				EE7424642B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424952B9BA8D600722435 /* SimpleLineIcons.ttf in Resources */,
+				EE74248E2B9BA8D600722435 /* FontAwesome6_Solid.ttf in Resources */,
+				EE74248C2B9BA8D600722435 /* FontAwesome6_Brands.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,46 +392,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		0994EFE8D8987FB60BD13542 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PantryApp-PantryAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		236EAEC3D74ADAF6DECC48BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +431,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		5E52D6A7082106289A4424BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +448,46 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		980EE12BDD7BF3E801BB07ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PantryApp-PantryAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C635C79210235569952C487C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D74BD0BE56AC6F67FDCE82 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,23 +502,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +537,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */;
+			baseConfigurationReference = 8CCB421554C53B526F8DF999 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +564,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-PantryApp-PantryAppTests.release.xcconfig */;
+			baseConfigurationReference = 322592799A719C9038940D4F /* Pods-PantryApp-PantryAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,11 +588,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-PantryApp.debug.xcconfig */;
+			baseConfigurationReference = 94153818CC42DC15FB3A7A3B /* Pods-PantryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AW22Z53SAJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PantryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +606,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.collinschnede.--PRODUCT-NAME-rfc1034identifier-";
 				PRODUCT_NAME = PantryApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -488,11 +616,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-PantryApp.release.xcconfig */;
+			baseConfigurationReference = 7818DB878C51231A05FEFA35 /* Pods-PantryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AW22Z53SAJ;
 				INFOPLIST_FILE = PantryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +633,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.collinschnede.--PRODUCT-NAME-rfc1034identifier-";
 				PRODUCT_NAME = PantryApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -560,6 +689,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -632,6 +772,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
