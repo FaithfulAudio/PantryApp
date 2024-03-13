@@ -1,51 +1,46 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useState, useMemo} from 'react';
 import {
-  FlatList,
   Image,
   ImageBackground,
   StyleSheet,
   TextInput,
   TouchableOpacity,
   View,
+  FlatList,
 } from 'react-native';
 import {Card, Text} from 'react-native-paper';
-import {PantryItem, pantry_items} from '../spiceData/recommendedPantryItems';
+import {PANTRY_HASH, PantryItem} from '../spiceData/recommendedPantryItems';
 import usePantryStore from '../stores/pantry.store';
 import Icon from 'react-native-vector-icons/Ionicons';
 import _ from 'lodash';
+import EmptyListMessage from '../components/EmptyListMessage';
 
-function PantryItems() {
+function GroceryList() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredItems, setFilteredItems] = useState(pantry_items);
-  const {
-    togglePantryItem,
-    isItemInPantry,
-    toggleGroceryItem,
-    isItemInGroceryList,
-  } = usePantryStore();
+  const {removeItemFromGroceryList, groceryList, moveGroceryItemToPantry} =
+    usePantryStore();
+  const [filteredItems, setFilteredItems] = useState(
+    groceryList.map(id => PANTRY_HASH[id]),
+  );
 
   useEffect(() => {
-    const sortedItems = [...pantry_items].sort((a, b) =>
-      a.title.localeCompare(b.title),
-    );
-    setFilteredItems(sortedItems);
-  }, []);
+    setFilteredItems(groceryList.map(id => PANTRY_HASH[id]));
+  }, [groceryList]);
 
   const debouncedSearch = useMemo(
     () =>
       _.debounce(query => {
         const lowerCaseQuery = query.toLowerCase();
-        const filtered = pantry_items.filter(
-          item =>
-            item.title.toLowerCase().includes(lowerCaseQuery) ||
-            item.description.toLowerCase().includes(lowerCaseQuery),
-        );
-        const sortedFilteredItems = filtered.sort((a, b) =>
-          a.title.localeCompare(b.title),
-        );
-        setFilteredItems(sortedFilteredItems);
-      }, 300),
-    [],
+        const filtItems = groceryList
+          .map(id => PANTRY_HASH[id])
+          .filter(
+            item =>
+              item.title.toLowerCase().includes(lowerCaseQuery) ||
+              item.description.toLowerCase().includes(lowerCaseQuery),
+          );
+        setFilteredItems(filtItems);
+      }, 250),
+    [groceryList],
   );
 
   const handleSearch = (query: string) => {
@@ -55,70 +50,57 @@ function PantryItems() {
 
   const handleClearSearch = () => {
     setSearchQuery('');
-    const sortedItems = [...pantry_items].sort((a, b) =>
-      a.title.localeCompare(b.title),
-    );
-    setFilteredItems(sortedItems);
+    setFilteredItems(groceryList.map(id => PANTRY_HASH[id]));
     debouncedSearch.cancel();
   };
 
-  const getFirstLetter = (title: string) => title.charAt(0).toUpperCase();
+  const removeItem = (id: number) => {
+    removeItemFromGroceryList(id);
+    setFilteredItems(currentItems =>
+      currentItems.filter(item => item.id !== id),
+    );
+  };
 
   const leftComponent = (imageUrl: string | undefined) =>
     imageUrl ? (
       <Image source={{uri: imageUrl}} style={styles.leftIcon} />
     ) : null;
 
-  const renderItem = ({item, index}: {item: PantryItem; index: number}) => (
-    <View>
-      {index === 0 ||
-      getFirstLetter(filteredItems[index - 1].title) !==
-        getFirstLetter(item.title) ? (
-        <View style={styles.headerContainer}>
-          <View style={styles.headerCircle}>
-            <Text style={styles.headerText}>{getFirstLetter(item.title)}</Text>
+  const renderItem = ({item}: {item: PantryItem}) => (
+    <View style={styles.cardContainer}>
+      <Card style={styles.cardStyle}>
+        <View style={styles.flexDirectionRow}>
+          <Card.Title
+            title={item.title}
+            left={() => leftComponent(item.imageUrl)}
+            style={styles.cardTitle}
+          />
+          <View style={styles.iconContainer}>
+            <TouchableOpacity
+              onPress={() => moveGroceryItemToPantry(item.id)}
+              style={styles.actionIcon}>
+              <Icon name="basket-outline" size={24} color="black" />
+            </TouchableOpacity>
           </View>
+          <TouchableOpacity
+            onPress={() => removeItem(item.id)}
+            style={styles.trashIcon}>
+            <Icon name="trash-outline" size={30} color="black" />
+          </TouchableOpacity>
         </View>
-      ) : null}
-      <View style={styles.cardContainer}>
-        <Card style={styles.cardStyle}>
-          <View style={styles.flexDirectionRow}>
-            <Card.Title
-              style={styles.cardTitle}
-              title={item.title}
-              left={() => leftComponent(item.imageUrl)}
-            />
-            <TouchableOpacity onPress={() => togglePantryItem(item.id)}>
-              <Icon
-                name="basket-outline"
-                size={30}
-                color={isItemInPantry(item.id) ? 'green' : 'grey'}
-                style={styles.actionIcon}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => toggleGroceryItem(item.id)}>
-              <Icon
-                name="cart-outline"
-                size={30}
-                color={isItemInGroceryList(item.id) ? 'brown' : 'grey'}
-                style={styles.actionIcon}
-              />
-            </TouchableOpacity>
-          </View>
 
-          <Card.Content>
-            <Text style={styles.description}>{item.description}</Text>
-          </Card.Content>
-        </Card>
-      </View>
+        <Card.Content>
+          <Text style={styles.description}>{item.description}</Text>
+        </Card.Content>
+      </Card>
     </View>
   );
 
-  const keyExtractor = (item: PantryItem) => `${item.id}`;
+  const keyExtractor = (item: PantryItem) => item.id.toString();
 
   return (
     <ImageBackground
-      source={require('../assets/spices.jpeg')}
+      source={require('../assets/MyPantry.jpeg')}
       style={styles.backgroundImage}
       resizeMode="cover">
       <View style={styles.searchContainer}>
@@ -142,7 +124,9 @@ function PantryItems() {
         renderItem={renderItem}
         keyExtractor={keyExtractor}
         contentContainerStyle={styles.container}
-        keyboardShouldPersistTaps="always"
+        ListEmptyComponent={
+          <EmptyListMessage message="There's nothing here yet! Let's add something to your grocery list." />
+        }
       />
     </ImageBackground>
   );
@@ -151,40 +135,47 @@ function PantryItems() {
 const styles = StyleSheet.create({
   cardContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: 10,
   },
+  flexDirectionRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
   actionIcon: {
-    marginHorizontal: 5,
+    marginRight: 0,
+  },
+  cardTitle: {
+    width: '75%',
+  },
+  trashIcon: {
+    marginLeft: 'auto',
+  },
+  actionContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backgroundImage: {
     flex: 1,
     paddingTop: 50,
   },
-  flexDirectionRow: {
-    flexDirection: 'row',
-  },
-  cardTitle: {
-    width: '75%',
+  trash: {
+    position: 'absolute',
+    right: 30,
+    top: 20,
   },
   leftIcon: {
     width: 50,
     height: 50,
     borderRadius: 25,
-  },
-  banner: {
-    backgroundColor: 'blue',
-    height: 30,
-    borderRadius: 20,
-    paddingHorizontal: 10,
-    justifyContent: 'center',
-    alignSelf: 'center',
-  },
-  bannerText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    textAlign: 'center',
   },
   cardStyle: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -203,9 +194,16 @@ const styles = StyleSheet.create({
     height: 'auto',
     alignSelf: 'center',
   },
-  selectedCard: {
-    borderColor: '#3498db',
-    borderWidth: 2,
+  leftSwipeContainer: {
+    backgroundColor: 'transparent',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    padding: 20,
+    height: '100%',
+  },
+  leftSwipeText: {
+    color: 'black',
+    fontWeight: '600',
   },
   clearButton: {
     paddingHorizontal: 10,
@@ -256,6 +254,9 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 16,
   },
+  swipeableContainer: {
+    flex: 1,
+  },
 });
 
-export default PantryItems;
+export default GroceryList;

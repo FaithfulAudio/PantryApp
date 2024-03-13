@@ -1,17 +1,19 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState, useMemo} from 'react';
 import {
   Image,
   ImageBackground,
-  ScrollView,
   StyleSheet,
   TextInput,
   TouchableOpacity,
   View,
+  FlatList,
 } from 'react-native';
 import {Card, Text} from 'react-native-paper';
-import {PANTRY_HASH, imageMap} from '../spiceData/recommendedPantryItems';
+import {PANTRY_HASH, PantryItem} from '../spiceData/recommendedPantryItems';
 import usePantryStore from '../stores/pantry.store';
 import Icon from 'react-native-vector-icons/Ionicons';
+import _ from 'lodash';
+import EmptyListMessage from '../components/EmptyListMessage';
 
 function PantryItems() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -19,24 +21,30 @@ function PantryItems() {
   const [filteredItems, setFilteredItems] = useState(
     myPantryList.map(id => PANTRY_HASH[id]),
   );
-  const swipeableRef = useRef(null) as any;
 
   useEffect(() => {
-    const pantryItemsInMyPantry = myPantryList.map(id => PANTRY_HASH[id]);
-    setFilteredItems(pantryItemsInMyPantry);
+    setFilteredItems(myPantryList.map(id => PANTRY_HASH[id]));
   }, [myPantryList]);
 
+  const debouncedSearch = useMemo(
+    () =>
+      _.debounce(query => {
+        const lowerCaseQuery = query.toLowerCase();
+        const filtItems = myPantryList
+          .map(id => PANTRY_HASH[id])
+          .filter(
+            item =>
+              item.title.toLowerCase().includes(lowerCaseQuery) ||
+              item.description.toLowerCase().includes(lowerCaseQuery),
+          );
+        setFilteredItems(filtItems);
+      }, 250),
+    [myPantryList],
+  );
+
   const handleSearch = (query: string) => {
-    const lowerCaseQuery = query.toLowerCase();
-    setSearchQuery(lowerCaseQuery);
-    const filteredItems = myPantryList
-      .map(id => PANTRY_HASH[id])
-      .filter(
-        item =>
-          item.title.toLowerCase().includes(lowerCaseQuery) ||
-          item.description.toLowerCase().includes(lowerCaseQuery),
-      );
-    setFilteredItems(filteredItems);
+    setSearchQuery(query);
+    debouncedSearch(query);
   };
 
   const handleClearSearch = () => {
@@ -44,20 +52,53 @@ function PantryItems() {
     setFilteredItems(myPantryList.map(id => PANTRY_HASH[id]));
   };
 
-  useEffect(() => {
-    if (swipeableRef?.current) {
-      swipeableRef.current.close();
-    }
-  }, [swipeableRef]);
-
   const removeItem = async (id: number) => {
     removeItemFromPantry(id);
-    setFilteredItems(filteredItems.filter(item => item.id !== id));
+    setFilteredItems(currentItems => {
+      const indexToRemove = currentItems.findIndex(item => item.id === id);
+
+      if (indexToRemove !== -1) {
+        return [
+          ...currentItems.slice(0, indexToRemove),
+          ...currentItems.slice(indexToRemove + 1),
+        ];
+      }
+
+      return currentItems;
+    });
   };
+
+  const leftComponent = (imageUrl: string | undefined) =>
+    imageUrl ? (
+      <Image source={{uri: imageUrl}} style={styles.leftIcon} />
+    ) : null;
+
+  const renderItem = ({item}: {item: PantryItem}) => (
+    <View>
+      <Card style={styles.cardStyle}>
+        <Card.Title
+          title={item.title}
+          left={() => leftComponent(item.imageUrl)}
+        />
+        <Card.Content>
+          <Text style={styles.description}>{item.description}</Text>
+        </Card.Content>
+      </Card>
+      <Icon
+        name="trash-outline"
+        size={30}
+        color="black"
+        style={styles.trash}
+        onPress={() => removeItem(item.id)}
+      />
+    </View>
+  );
+
+  const keyExtractor = (item: PantryItem) => item.id.toString();
 
   return (
     <ImageBackground
-      source={require('../assets/spices.jpeg')}
+      source={require('../assets/MyPantry.jpeg')}
       style={styles.backgroundImage}
       resizeMode="cover">
       <View style={styles.searchContainer}>
@@ -76,32 +117,16 @@ function PantryItems() {
           </TouchableOpacity>
         )}
       </View>
-      <ScrollView contentContainerStyle={styles.container}>
-        {filteredItems.map(item => (
-          <View>
-            <Card style={styles.cardStyle}>
-              <Card.Title
-                title={item.title}
-                left={() =>
-                  item.id ? (
-                    <Image source={imageMap[item.id]} style={styles.leftIcon} />
-                  ) : null
-                }
-              />
-              <Card.Content>
-                <Text style={styles.description}>{item.description}</Text>
-              </Card.Content>
-            </Card>
-            <Icon
-              name="trash"
-              size={30}
-              color="black"
-              style={styles.trash}
-              onPress={() => removeItem(item.id)}
-            />
-          </View>
-        ))}
-      </ScrollView>
+      <FlatList
+        data={filteredItems}
+        renderItem={renderItem}
+        keyExtractor={keyExtractor}
+        contentContainerStyle={styles.container}
+        keyboardShouldPersistTaps="always"
+        ListEmptyComponent={
+          <EmptyListMessage message="There's nothing here yet! Let's add something to your pantry." />
+        }
+      />
     </ImageBackground>
   );
 }
@@ -134,8 +159,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    width: '90%',
-    height: 200,
+    width: '100%',
+    height: 'auto',
     alignSelf: 'center',
   },
   leftSwipeContainer: {
@@ -199,7 +224,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   swipeableContainer: {
-    flex: 1, // Ensure Swipeable takes up full height
+    flex: 1,
   },
 });
 

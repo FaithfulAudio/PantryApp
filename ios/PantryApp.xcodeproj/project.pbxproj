@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* PantryAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PantryAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		5AA9912F709FE02FA8EA2F4C /* Pods_PantryApp_PantryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0283FAEB67D8ADF8E79D81 /* Pods_PantryApp_PantryAppTests.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D68128FDA420DDA6497B61C1 /* Pods_PantryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */; };
+		EE584A792BA0F4D100445789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE584A782BA0F4D100445789 /* Assets.xcassets */; };
 		EE74245B2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		EE74245C2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		EE74245D2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
@@ -72,7 +72,6 @@
 		13B07F961A680F5B00A75B9A /* PantryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PantryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PantryApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = PantryApp/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PantryApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PantryApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PantryApp/main.m; sourceTree = "<group>"; };
 		2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PantryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +82,7 @@
 		8CCB421554C53B526F8DF999 /* Pods-PantryApp-PantryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp-PantryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp-PantryAppTests/Pods-PantryApp-PantryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		94153818CC42DC15FB3A7A3B /* Pods-PantryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE584A782BA0F4D100445789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../fit-mobile-app/FacilitronFIT/ios/FacilitronFIT/Assets.xcassets"; sourceTree = "<group>"; };
 		EE74246E2B9BA12600722435 /* MyPantry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MyPantry.jpeg; path = ../src/assets/MyPantry.jpeg; sourceTree = "<group>"; };
 		EE7424702B9BA8D600722435 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
 		EE7424712B9BA8D600722435 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 		13B07FAE1A68108700A75B9A /* PantryApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE584A782BA0F4D100445789 /* Assets.xcassets */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -354,6 +354,7 @@
 				EE7424962B9BA8D600722435 /* Zocial.ttf in Resources */,
 				EE7424852B9BA8D600722435 /* Entypo.ttf in Resources */,
 				EE7424612B9B9EF700722435 /* BuildFile in Resources */,
+				EE584A792BA0F4D100445789 /* Assets.xcassets in Resources */,
 				EE74245D2B9B9EF700722435 /* BuildFile in Resources */,
 				EE74246D2B9B9EF700722435 /* BuildFile in Resources */,
 				EE7424692B9B9EF700722435 /* BuildFile in Resources */,
@@ -365,7 +366,6 @@
 				EE7424872B9BA8D600722435 /* Feather.ttf in Resources */,
 				EE7424882B9BA8D600722435 /* FontAwesome.ttf in Resources */,
 				EE74246C2B9B9EF700722435 /* BuildFile in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				EE7424642B9B9EF700722435 /* BuildFile in Resources */,
 				EE7424952B9BA8D600722435 /* SimpleLineIcons.ttf in Resources */,
 				EE74248E2B9BA8D600722435 /* FontAwesome6_Solid.ttf in Resources */,
