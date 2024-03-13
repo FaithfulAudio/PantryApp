@@ -14,25 +14,25 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D68128FDA420DDA6497B61C1 /* Pods_PantryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2299E0E9D84F3F360609C559 /* Pods_PantryApp.framework */; };
 		EE584A792BA0F4D100445789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE584A782BA0F4D100445789 /* Assets.xcassets */; };
-		EE74245B2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74245C2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74245D2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74245E2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74245F2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424602B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424612B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424622B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424632B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424642B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424652B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424662B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424672B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424682B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE7424692B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74246A2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74246B2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74246C2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		EE74246D2B9B9EF700722435 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		EE74245B2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74245C2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74245D2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74245E2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74245F2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424602B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424612B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424622B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424632B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424642B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424652B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424662B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424672B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424682B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE7424692B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74246A2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74246B2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74246C2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		EE74246D2B9B9EF700722435 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		EE74246F2B9BA12600722435 /* MyPantry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EE74246E2B9BA12600722435 /* MyPantry.jpeg */; };
 		EE7424842B9BA8D600722435 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424702B9BA8D600722435 /* AntDesign.ttf */; };
 		EE7424852B9BA8D600722435 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE7424712B9BA8D600722435 /* Entypo.ttf */; };
@@ -329,44 +329,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE74245B2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245B2B9B9EF700722435 /* (null) in Resources */,
 				EE7424902B9BA8D600722435 /* Foundation.ttf in Resources */,
 				EE7424912B9BA8D600722435 /* Ionicons.ttf in Resources */,
-				EE7424602B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424602B9B9EF700722435 /* (null) in Resources */,
 				EE7424932B9BA8D600722435 /* MaterialIcons.ttf in Resources */,
-				EE74245F2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245F2B9B9EF700722435 /* (null) in Resources */,
 				EE74248D2B9BA8D600722435 /* FontAwesome6_Regular.ttf in Resources */,
-				EE74245C2B9B9EF700722435 /* BuildFile in Resources */,
-				EE74245E2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245C2B9B9EF700722435 /* (null) in Resources */,
+				EE74245E2B9B9EF700722435 /* (null) in Resources */,
 				EE7424892B9BA8D600722435 /* FontAwesome5_Brands.ttf in Resources */,
 				EE7424942B9BA8D600722435 /* Octicons.ttf in Resources */,
-				EE7424652B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424652B9B9EF700722435 /* (null) in Resources */,
 				EE74248F2B9BA8D600722435 /* Fontisto.ttf in Resources */,
 				EE7424842B9BA8D600722435 /* AntDesign.ttf in Resources */,
-				EE7424672B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424672B9B9EF700722435 /* (null) in Resources */,
 				EE74248A2B9BA8D600722435 /* FontAwesome5_Regular.ttf in Resources */,
-				EE7424662B9B9EF700722435 /* BuildFile in Resources */,
-				EE7424622B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424662B9B9EF700722435 /* (null) in Resources */,
+				EE7424622B9B9EF700722435 /* (null) in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				EE7424682B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424682B9B9EF700722435 /* (null) in Resources */,
 				EE74246F2B9BA12600722435 /* MyPantry.jpeg in Resources */,
 				EE74248B2B9BA8D600722435 /* FontAwesome5_Solid.ttf in Resources */,
 				EE7424962B9BA8D600722435 /* Zocial.ttf in Resources */,
 				EE7424852B9BA8D600722435 /* Entypo.ttf in Resources */,
-				EE7424612B9B9EF700722435 /* BuildFile in Resources */,
+				EE7424612B9B9EF700722435 /* (null) in Resources */,
 				EE584A792BA0F4D100445789 /* Assets.xcassets in Resources */,
-				EE74245D2B9B9EF700722435 /* BuildFile in Resources */,
-				EE74246D2B9B9EF700722435 /* BuildFile in Resources */,
-				EE7424692B9B9EF700722435 /* BuildFile in Resources */,
+				EE74245D2B9B9EF700722435 /* (null) in Resources */,
+				EE74246D2B9B9EF700722435 /* (null) in Resources */,
+				EE7424692B9B9EF700722435 /* (null) in Resources */,
 				EE7424862B9BA8D600722435 /* EvilIcons.ttf in Resources */,
 				EE7424922B9BA8D600722435 /* MaterialCommunityIcons.ttf in Resources */,
-				EE74246A2B9B9EF700722435 /* BuildFile in Resources */,
-				EE7424632B9B9EF700722435 /* BuildFile in Resources */,
-				EE74246B2B9B9EF700722435 /* BuildFile in Resources */,
+				EE74246A2B9B9EF700722435 /* (null) in Resources */,
+				EE7424632B9B9EF700722435 /* (null) in Resources */,
+				EE74246B2B9B9EF700722435 /* (null) in Resources */,
 				EE7424872B9BA8D600722435 /* Feather.ttf in Resources */,
 				EE7424882B9BA8D600722435 /* FontAwesome.ttf in Resources */,
-				EE74246C2B9B9EF700722435 /* BuildFile in Resources */,
-				EE7424642B9B9EF700722435 /* BuildFile in Resources */,
+				EE74246C2B9B9EF700722435 /* (null) in Resources */,
+				EE7424642B9B9EF700722435 /* (null) in Resources */,
 				EE7424952B9BA8D600722435 /* SimpleLineIcons.ttf in Resources */,
 				EE74248E2B9BA8D600722435 /* FontAwesome6_Solid.ttf in Resources */,
 				EE74248C2B9BA8D600722435 /* FontAwesome6_Brands.ttf in Resources */,
@@ -606,7 +606,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.collinschnede.--PRODUCT-NAME-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = org.collinschnede.MyPantry;
 				PRODUCT_NAME = PantryApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -633,7 +633,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.collinschnede.--PRODUCT-NAME-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = org.collinschnede.MyPantry;
 				PRODUCT_NAME = PantryApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -720,10 +720,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -802,10 +799,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
