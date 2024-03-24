@@ -991,35 +991,47 @@ export const pantry_items: PantryItem[] = [
     description: 'Cucumbers preserved in vinegar or brine.',
     id: 146,
     title: 'Pickles',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Pickles.jpg',
   },
   {
     description:
       'Edible seeds of pine trees, used in baking, cooking, and to make pesto.',
     id: 147,
     title: 'Pine nuts',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Pine_nuts.jpg',
   },
   {
     description:
       'Small, mild berries with a sweet and peppery flavor, used to add color and flavor to dishes.',
     id: 148,
     title: 'Pink peppercorns',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Pink_peppercorns.jpg',
   },
   {
     description:
       'Cornmeal used to make a creamy Italian dish or allowed to set and then sliced.',
     id: 149,
     title: 'Polenta',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Polenta.jpg',
   },
   {
     description: 'For making fresh popcorn at home, a popular snack option.',
     id: 150,
     title: 'Popcorn kernels',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Popcorn_kernels.jpg',
   },
   {
     description:
       'A blend of herbs and spices like sage, thyme, marjoram, rosemary, black pepper, and nutmeg, used to season poultry dishes like roast chicken and stuffing.',
     id: 151,
     title: 'Poultry seasoning',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Poultry_seasoning.jpg',
   },
   {
     description:
@@ -1402,11 +1414,6 @@ export const pantry_items: PantryItem[] = [
     description: 'Green vegetable, rich in vitamins.',
   },
   {
-    id: 222,
-    title: 'Carrots',
-    description: 'Crunchy vegetable, good for snacking and cooking.',
-  },
-  {
     id: 223,
     title: 'Cucumbers',
     description: 'Fresh vegetable, commonly used in salads.',
@@ -1480,11 +1487,6 @@ export const pantry_items: PantryItem[] = [
     description: 'Seasoned meat in casings, used in grilling and dishes.',
   },
   {
-    id: 240,
-    title: 'Salmon Fillets',
-    description: 'Rich in omega-3 fatty acids, used in various cuisines.',
-  },
-  {
     id: 241,
     title: 'Shrimp',
     description: 'Seafood, used in a variety of dishes.',
@@ -1529,16 +1531,6 @@ export const pantry_items: PantryItem[] = [
     description: 'Basil-based sauce, used in pasta and other dishes.',
   },
   {
-    id: 261,
-    title: 'Pickles',
-    description: 'Fermented cucumbers, used as a condiment or snack.',
-  },
-  {
-    id: 262,
-    title: 'Olives',
-    description: 'Brined fruit, used in cooking and as a garnish.',
-  },
-  {
     id: 263,
     title: 'Sauerkraut',
     description: 'Fermented cabbage, used as a condiment.',
@@ -1562,11 +1554,6 @@ export const pantry_items: PantryItem[] = [
     id: 267,
     title: 'Mozzarella Cheese',
     description: 'Soft cheese, used in pizzas and salads.',
-  },
-  {
-    id: 268,
-    title: 'Parmesan Cheese',
-    description: 'Hard, aged cheese, grated over dishes.',
   },
   {
     id: 269,
@@ -1972,6 +1959,18 @@ export const pantry_items: PantryItem[] = [
     title: 'Egg Noodles',
     description:
       'Thin, flexible pasta made with eggs, ideal for absorbing sauces and used in a variety of dishes.',
+  },
+  {
+    id: 352,
+    title: 'Asparagus',
+    description:
+      'A green, spear-like vegetable known for its distinct, slightly bitter flavor and tender texture when cooked.',
+  },
+  {
+    id: 353,
+    title: 'Chipotle Tabasco Sauce',
+    description:
+      'A smoky, medium-heat sauce made from smoked jalapeño peppers. This sauce combines the distinct heat of Tabasco with a deep, smoky flavor.',
   },
 ];
 
