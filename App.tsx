@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import MainStack from './src/navigation/index';
 import {BannerAd, BannerAdSize} from 'react-native-google-mobile-ads';
 import mobileAds from 'react-native-google-mobile-ads';
+import {check, request, PERMISSIONS, RESULTS} from 'react-native-permissions';
 
 function App(): React.JSX.Element {
   const unitId =
@@ -25,9 +26,16 @@ function App(): React.JSX.Element {
     }
   };
 
-  // Call the function to set status bar color
+  const checkPermissions = async () => {
+    const result = await check(PERMISSIONS.IOS.APP_TRACKING_TRANSPARENCY);
+    if (result === RESULTS.DENIED) {
+      await request(PERMISSIONS.IOS.APP_TRACKING_TRANSPARENCY);
+    }
+  };
+
   useEffect(() => {
     setStatusBarColor();
+    checkPermissions();
   }, []);
 
   return (
