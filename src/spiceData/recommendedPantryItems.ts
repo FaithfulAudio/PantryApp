@@ -1034,112 +1034,144 @@ export const pantry_items: PantryItem[] = [
       'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Poultry_seasoning.jpg',
   },
   {
-    description:
-      'Dried mixtures for making beverages like lemonade or iced tea.',
-    id: 152,
-    title: 'Powdered drink mixes',
-  },
-  {
     description: 'Dried milk powder used for baking or as a milk substitute.',
     id: 153,
     title: 'Powdered milk',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Powdered_milk.jpg',
   },
   {
     description: 'Fine sugar for icing, frosting, and baking.',
     id: 154,
     title: 'Powdered sugar',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Powdered_sugar.jpg',
   },
   {
     description:
       'A blend of ground spices like cinnamon, ginger, nutmeg, allspice, and cloves, used to flavor pumpkin pie and other autumn desserts.',
     id: 155,
     title: 'Pumpkin pie spice',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Pumpkin_pie_spice.jpg',
   },
   {
     description:
       'A high-protein, gluten-free grain used in salads and as a rice substitute.',
     id: 156,
     title: 'Quinoa',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Quinoa.jpg',
   },
   {
     description: 'Instant noodles, a quick and affordable meal option.',
     id: 157,
     title: 'Ramen noodles',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Ramen_noodles.jpg',
   },
   {
     description: 'Staple grain used in various cuisines around the world.',
     id: 158,
     title: 'Rice',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Rice.jpg',
   },
   {
     description: 'Crunchy snacks made from puffed rice grains.',
     id: 159,
     title: 'Rice cakes',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Rice_cakes.jpg',
   },
   {
     description:
       'Flour made from finely milled rice, used in gluten-free baking and as a thickening agent.',
     id: 160,
     title: 'Rice flour',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Rice_flour.jpg',
   },
   {
     description: 'A mild vinegar made from fermented rice.',
     id: 161,
     title: 'Rice vinegar',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Rice_vinegar.jpg',
   },
   {
     description:
       'A flour made from rye grain, used in making rye bread and other baked goods.',
     id: 162,
     title: 'Rye flour',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Rye_flour.jpg',
   },
   {
     description:
       'A flavorless and colorless oil made from the seeds of safflower plants, used in cooking and salad dressings.',
     id: 163,
     title: 'Safflower oil',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Safflour_oil.jpg',
   },
   {
     description:
       'An expensive spice with a delicate flavor and bright yellow color, used to add flavor and color to dishes.',
     id: 164,
     title: 'Saffron',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Saffron.jpg',
   },
   {
     description: 'Canned fish, rich in omega-3 fatty acids.',
     id: 165,
-    title: 'Salmon',
+    title: 'Canned Salmon',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Canned_salmon.jpg',
   },
   {
     description: 'A spicy tomato-based sauce, great as a dip or topping.',
     id: 166,
     title: 'Salsa',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Salsa.jpg',
   },
   {
     description: 'Common seasoning used to enhance the flavor of dishes.',
     id: 167,
     title: 'Salt',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Salt.jpg',
   },
   {
     description: 'Small, oily fish commonly canned and eaten whole.',
     id: 168,
     title: 'Sardines',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Sardines.jpg',
   },
   {
     description: 'Edible marine plants used in Asian cuisine.',
     id: 169,
     title: 'Seaweed',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Seaweed.jpg',
   },
   {
     description: 'A coarse flour used for pasta and bread.',
     id: 170,
     title: 'Semolina flour',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Semolina_flour.jpg',
   },
   {
     description:
       'A flavorful oil made from sesame seeds, used in Asian cooking and dressings.',
     id: 171,
     title: 'Sesame oil',
+    imageUrl:
+      'https://my-pantry-app.s3.us-west-2.amazonaws.com/ingredients/Sesame_oil.jpg',
   },
   {
     description:
